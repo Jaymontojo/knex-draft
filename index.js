@@ -1,5 +1,5 @@
 const app = require('./server/server.js');
-const db = require('./knex');
+const db = require('./server/knex');
 const PORT = process.env.PORT || 4000;
 
 (async () => {
