@@ -7,11 +7,10 @@ const db = knex({
   process.env.DB_URL_LOCAL,
   searchPath: 'public',
   migrations: {
-    tableName: 'knex_migrations',
-    directory: __dirname + '../db/migrations'
+    directory: '/db/migrations'
   },
   seeds: {
-    directory: __dirname + '../db/seeds'
+    directory: path.join(__dirname, '../db/seeds')
   }
 });
 
